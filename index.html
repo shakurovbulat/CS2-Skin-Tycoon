@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CS2 Skin Tycoon</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f59e0b'/><text x='16' y='22' font-family='sans-serif' font-weight='900' font-size='16' text-anchor='middle' fill='%23000'>CS</text></svg>" />
+    <!-- Yandex Games SDK (safe fallback in local standalone) -->
+    <script src="https://yandex.ru/games/sdk/v2" async></script>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Top Resource Bar -->
+      <header id="topbar" class="topbar-container"></header>
+
+      <!-- Main Game View (3 Columns) -->
+      <main class="main-layout">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar-container"></aside>
+
+        <!-- Center Interactive Weapon Skin Showcase -->
+        <section id="center-showcase" class="center-container">
+          <!-- Phaser 3 Canvas Mount -->
+          <div id="phaser-canvas-container"></div>
+          <!-- CS2 Skin HUD Overlay -->
+          <div id="center-hud"></div>
+        </section>
+
+        <!-- Right Upgrades Panel -->
+        <aside id="upgrades-panel" class="upgrades-container"></aside>
+      </main>
+
+      <!-- Full-screen Modals & Views (Inventory, Cases, Achievements, Prestige, Settings, Offline) -->
+      <div id="modal-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
